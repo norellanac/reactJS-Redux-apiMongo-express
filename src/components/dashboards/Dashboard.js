@@ -17,7 +17,7 @@ class Dashboard extends Component {
 	}
 
 	async componentDidMount() {
-		let resp = await axios.get('http://localhost:3000/api/record', {
+		let resp = await axios.get('http://www.quecompraste.website:3000/api/record', {
 			headers: { 'Access-Control-Allow-Origin': '*' }
 		});
 
@@ -37,7 +37,7 @@ class Dashboard extends Component {
 		});
 
 		try {
-			const response = await fetch('http://localhost:3000/api/record', {
+			const response = await fetch('http://www.quecompraste.website:3000/api/record', {
 				//importante revisar en api de laravel que este corectamente implementado laravel-cors y la url escrita EXACTAMENTE igual que en las rutas
 				method: 'GET', // or 'PUT'
 				headers: {
@@ -77,7 +77,7 @@ class Dashboard extends Component {
 		});
 
 		try {
-			const response = await fetch('http://localhost:3000/api/record/data', {
+			const response = await fetch('http://www.quecompraste.website:3000/api/record/data', {
 				//importante revisar en api de laravel que este corectamente implementado laravel-cors y la url escrita EXACTAMENTE igual que en las rutas
 				method: 'GET', // or 'PUT'
 				headers: {

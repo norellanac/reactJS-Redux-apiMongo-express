@@ -11,7 +11,7 @@ class Record extends Component {
 	}
 
 	async componentDidMount() {
-		let resp = await axios.get('http://localhost:3000/api/record', {
+		let resp = await axios.get('http://www.quecompraste.website:3000/api/record', {
 			headers: { 'Access-Control-Allow-Origin': '*' }
 		});
 		//let resp = await axios.get('https://pokeapi.co/api/v2/pokemon/ditto/');
