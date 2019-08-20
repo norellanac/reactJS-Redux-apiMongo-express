@@ -140,7 +140,7 @@ class Dashboard extends Component {
 							<div className="card-body">
 								<h5 className="card-title">
 									Temperatura C°{' '}
-									<span className="badge badge-danger">{this.state.dash.last.num1}</span>
+									<span className="badge badge-danger">{this.state.dash.last.num2}</span>
 								</h5>
 								<p className="card-text">
 								</p>
